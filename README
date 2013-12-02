@@ -1,0 +1,29 @@
+Complex
+=======
+
+A complex number class by Connor Jacobsen.
+
+Deliverable Questions
+=====================
+
+1) Does the program compile without errors?
+- Yes, the program compiles without errors.
+
+2) Does the program compile without warnings?
+- No, the compiler gives 5 "control reaches end of non-void function warnings. These are all on overloaded operators, all of which follows the format from the text.
+
+3) Does the program run without crashing?
+- This is a library and not technically a program, so it doesn't "run," per se.
+
+4) Describe how you tested the program.
+- I tested the program with Catch, the C++ testing framework. I wrote unit tests for each function, operator, and constructor used in the library, making sure all the tests passed correctly and covered the functions well.
+
+5) Describe the ways in which the program does not meet assignment's specifications.
+- The unit tests are not exhaustive. I could not figure out how to properly test the overloaded input and output stream operators, or the move constructor. 
+- When trying to run the unit test for the complexFromPolar constructor, the compiler complained that it was an undefined identifier, even though it had been scoped correctly and the name copy-pasted from the function definition in the header file ( also included in the test program ).
+
+6) Describe all known and suspected bugs.
+- There are no known bugs.
+
+7) Does the program run correctly?
+- All of the tested functions pass all tests without issue.
